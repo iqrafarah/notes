@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="./src/imgs/favicon.png" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/3009cf5dd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="src/JS/jscolor.js"></script>
+    <script src="src/JS/jscolor.min.js"></script>
+    <title>Note It</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="tabsContainer div1 sidebar">
+        <div class="tabsItems">
+          <div class="top">
+            <h1 id="logo">Note it</h1>
+            <i class="fa-solid fa-bars" id="btn"></i>
+          </div>
+          <!-- <ul>
+            <li>
+              <a href="#Dashboard">
+                <i class="bx bxs-grid-alt"></i>
+                <span class="tabItem nav-item">Dashboard</span>
+              </a>
+              <span class="tooltip tabItem">Dashboard</span>
+            </li>
+          </ul> -->
+        </div>
+        <div class="tabsStandard">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-plus createTab"></i>
+                <span class="tabItem nav-item createTab">Create Tab</span>
+              </a>
+              <span class="tooltip tabItem">Create Tab</span>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <a href="src/deletedNote.html">
+              <i class="bx bxs-trash-alt bx-flip-horizontal"></i>
+              <span class="tabItem nav-item">Trash</span>
+            </a>
+            <span class="tooltip tabItem">Trash</span>
+          </li>
+        </ul>
+      </div>
+
+      <header class="div2">
+        <input type="search" id="searchBar" placeholder="Search your notes" />
+        <div class="buttons">
+          <button class="add-btn darkmode-btn">
+            <i class="fa-solid fa-moon fa-xl" style="color: #fff"></i>
+          </button>
+
+          <button class="add-btn addNote">
+            <i class="fa-solid fa-plus fa-lg" style="color: #fff"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="notes-container div3">
+        <h1 class="empty-message"></h1>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="src/JS/script.js" defer></script>
+  </body>
+</html>

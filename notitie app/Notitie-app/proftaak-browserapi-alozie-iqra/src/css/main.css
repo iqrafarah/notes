@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/roseritta");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+header {
+  position: sticky;
+  top: 0%;
+  padding: 20px 0;
+  height: 70px;
+  padding: 0 130px;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  margin-left: 10px;
+  width: 120px;
+}
+
+.box:nth-child(3n + 1) {
+  order: 1 !important;
+}
+.box:nth-child(3n + 2) {
+  order: 2;
+}
+.box:nth-child(3n) {
+  order: 3 !important;
+}
+/* .box:nth-child(2) {
+  margin-top: 70px !important;
+}
+.box:nth-of-type(2) {
+  margin-top: 70px !important;
+}
+.box:nth-child(3) {
+  margin-top: 70px !important;
+} */
+/* Force new columns */
+.notes-container::before,
+.notes-container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.empty-message {
+  margin-top: 15vw;
+  font-size: 2.5em;
+  margin-left: 25vw;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#logo {
+  font-weight: normal;
+  font-family: "roseritta", monospace;
+  color: black;
+  cursor: pointer !important;
+}
+
+.input-box {
+  min-height: 280px;
+  outline: none;
+  text-transform: capitalize;
+  padding: 23px 20px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.box:nth-child(1n) {
+  background-color: #9fd8ef;
+}
+.box:nth-child(2n) {
+  background-color: #9aebc6;
+}
+.box:nth-child(3n) {
+  background-color: #f5eeb6;
+}
+.box:nth-child(5n) {
+  background-color: #d4b6f5;
+}
+
+.icons i {
+  cursor: pointer;
+  width: 23px;
+  object-fit: contain;
+}
+.box {
+  width: 345px;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #282828; */
+}
+.styles {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.166);
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.styles button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  text-transform: capitalize;
+  /* color: white; */
+}
+.bold {
+  font-weight: bolder;
+}
+.bold .italic {
+  font-style: italic;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.underline {
+  text-decoration: underline;
+  font-weight: 400;
+}
+.icons {
+  border-top: 2px solid rgba(255, 255, 255, 0.166);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 10px 20px;
+}
+.divIcons {
+  display: flex;
+  gap: 15px;
+}
+.input-box:focus {
+  outline-color: none;
+}
+
+.notes-container,
+.deletedNotes,
+.deletedNotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 10px;
+  margin-top: 100px;
+  margin-left: 30px;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+.note-box {
+  border: 1px solid red;
+}
+.add-btn {
+  background-color: #282828;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#saveButton {
+  position: sticky;
+  float: right;
+  background-color: #55008c;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+}
+#searchBar {
+  line-height: 10px;
+  width: 500px;
+  font-size: 18px;
+  padding: 15px;
+  outline: none;
+  border-radius: 25px;
+  border: 1px solid rgba(20, 20, 20, 0.279);
+  margin-left: 250px;
+}
+
+/* darkmode */
+.darkMode {
+  background-color: #161616;
+  color: white;
+}
+.darkMode .tooltip {
+  color: white !important;
+}
+.darkMode .sidebar ul li a {
+  color: white;
+}
+.darkHeader {
+  background-color: #161616;
+}
+.darkTabs #logo {
+  color: white;
+}
+.darkTabs .tabsItems h4 {
+  color: white;
+}
+.darkTabs h4 {
+  color: white !important;
+}
+.darkSearchBar {
+  background-color: #282828;
+  color: white;
+  outline: none;
+}
+.darkTabs {
+  background-color: #282828 !important  ;
+}
+.darkTabs .tabsItems .spaces {
+  color: #6a6a6a !important;
+}
+
+/* tabs */
+.tabsContainer {
+  background-color: #f7f7f5;
+  padding: 30px;
+}
+.tabsContainer img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.tabsContainer h4 {
+  font-weight: 500;
+  color: black;
+}
+.tabsItems {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #6a6a6aa6;
+  padding-bottom: 20px;
+}
+.spaces {
+  color: #6a6a6a;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  height: 92.7vh;
+  grid-area: 1 / 1 / 6 / 2;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 6;
+  padding-top: 20px;
+}
+.div3 {
+  grid-area: 1 / 2 / 6 / 6;
+}
+#SearchBar::-webkit-search-cancel-button {
+  color: white;
+  fill: white;
+}
+@media only screen and (max-width: 1000px) {
+  .notes-container,
+  .deletedNotes {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 100px;
+    padding: 0 25px;
+    position: relative;
+    width: min-content;
+  }
+  #searchBar {
+    width: 60vw;
+    margin: 0;
+  }
+
+  .empty-message {
+    font-size: 1.5em;
+  }
+  .notes-container {
+    margin-left: -80px;
+    margin-top: 180px;
+    width: min-content;
+  }
+  .box {
+    width: 75vw;
+  }
+  .sidebar.active ~ .notes-container {
+    display: none;
+  }
+  .sidebar.active ~ .div2 {
+    display: none;
+  }
+  .notes-container {
+    padding: initial;
+  }
+  .notes-container::before,
+  .notes-container::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 0;
+  }
+}
+
+/* side bar */
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  padding: 0.4rem 0.8rem;
+  transition: 0.5s ease;
+  z-index: 999 !important;
+}
+
+.sidebar.active ~ .notes-container {
+  left: 250px;
+}
+.top {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+.sidebar.active {
+  width: 300px;
+  z-index: 999;
+}
+.sidebar #btn {
+  position: absolute;
+  top: 1.2rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.sidebar.active #btn {
+  left: 80%;
+}
+
+.sidebar #logo {
+  display: flex;
+  height: 50px;
+  width: 200px !important;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar.active #logo {
+  opacity: 1;
+  transition: 0.5s ease-in;
+}
+.top #logo i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.sidebar.active #logo {
+  display: block;
+}
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+.sidebar ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 90%;
+}
+.tabIcons {
+  cursor: pointer;
+}
+.deleteTab {
+  margin-left: 10px;
+}
+.tabIcons {
+  display: none !important;
+}
+.sidebar ul:hover .tabIcons {
+  display: none;
+}
+.sidebar ul:hover a {
+  /* background-color: rgb(179, 179, 179) !important; */
+  color: rgb(0, 0, 0) !important;
+  border-radius: 10rem;
+}
+.sidebar ul:hover {
+  background-color: #ededeb !important;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 10rem;
+}
+.sidebar.active ul li:hover .tabIcons {
+  display: block !important;
+  /* background-color: gray !important; */
+}
+
+/* .sidebar ul :focus {
+  background-color: #ededeb;
+  color: black;
+  border-radius: 10rem;
+} */
+/* .activetab   {
+  background-color: #ededeb !important;
+  color: black !important;
+  border-radius: 10rem;
+} */
+
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+.sidebar .nav-item {
+  opacity: 0;
+}
+.sidebar.active .nav-item {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgb(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+  color: black;
+}
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+.sidebar.active ~ .notes-container {
+  left: 50px;
+}
+.div2 {
+  padding: 50px 50px;
+  width: 78vw;
+}
+.notes-container {
+  position: relative;
+  top: 0;
+  left: 70px;
+  transition: all 0.5s ease;
+}
+.noResult {
+  margin-top: 5vw;
+  margin-left: 30vw;
+  font-size: 1.5rem;
+}
+.tabItem {
+  font-weight: normal;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  max-height: 0;
+}
