@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/3009cf5dd2.js"
+      crossorigin="anonymous"
+    ></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Note It - Deleted Notes</title>
+  </head>
+
+  <body>
+  <div class="container">
+ <div class="tabsContainer div1 sidebar">
+        <div class="tabsItems">
+          <div class="top">
+            <a href="../index.html"><h1 id="logo">Note it</h1></a>
+            <i class="fa-solid fa-bars" id="btn"></i>      
+          </div>
+            
+        </div>
+        <div class="tabsStandard">
+          <ul>
+              <li>
+                <a href="#">
+                 <i class="fa-solid fa-plus createTab" ></i>
+                  <span class="tabItem nav-item createTab">Create Tab</span>
+                </a>
+                <span class="tooltip tabItem ">Create Tab</span>
+              </li>
+            </ul>
+        </div>
+ <ul>
+            <li>
+              <a class="activetab" href="#">
+                <i class='bx bxs-trash-alt bx-flip-horizontal' ></i>
+                <span class="tabItem nav-item  ">Trash</span>
+              </a>
+              <span class="tooltip tabItem ">Trash</span>
+            </li>
+          </ul>
+      </div>
+
+      <header class="div2">
+        <input type="search" id="searchBar" placeholder="Search your notes">
+                  <i class="fa-solid fa-bars" id="btn"></i>
+
+        <div class="buttons">
+
+        <button class="add-btn darkmode-btn">
+         <i class="fa-solid fa-moon fa-xl" style="color: #fff"></i>
+        </button>
+       
+        </div>
+      </header>
+     
+      <div class="deletedNotes notes-container div3">
+        <h1 class="empty-message"></h1>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/deletedNotes.js"></script>
+  </body>
+</html>
