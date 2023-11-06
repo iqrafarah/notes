@@ -293,10 +293,12 @@ button {
     width: min-content;
   }
   #searchBar {
-    width: 59vw;
+    width: 69vw;
     margin: 0;
   }
-
+  .div2 {
+    width: 100% !important;
+  }
   .empty-message {
     font-size: 1.5em;
   }
@@ -322,6 +324,7 @@ button {
   /* sidebar */
   .div2 #btn {
     display: block;
+    margin-left: 20px;
   }
   .sidebar {
     display: none;
