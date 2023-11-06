@@ -28,6 +28,7 @@ header img {
   width: 120px;
 }
 
+
 .box:nth-child(3n + 1) {
   order: 1;
 }
@@ -274,6 +275,11 @@ button {
 .div2 #btn {
   display: none;
 }
+
+.bx 
+{
+  color: black !important;
+}
 @media only screen and (max-width: 700px) {
   .notes-container,
   .deletedNotes {
@@ -309,7 +315,7 @@ button {
     width: min-content;
   }
   .box {
-    width: 75vw;
+    width: 85vw;
   }
   .notes-container {
     padding: initial;
