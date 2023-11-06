@@ -190,7 +190,7 @@ window.addEventListener("load", (event) => {
   showNotes();
 
   const sidebar = document.querySelector(".sidebar");
-  const btn = document.querySelector("#btn");
+  const btns = document.querySelector("#btn");
 
   const isSidebarActive = localStorage.getItem("isSidebarActive") === "true";
 
@@ -198,14 +198,16 @@ window.addEventListener("load", (event) => {
     sidebar.classList.add("active");
   }
 
-  btn.onclick = function () {
-    sidebar.classList.toggle("active");
+  btns.forEach((btn) => {
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
 
-    localStorage.setItem(
-      "isSidebarActive",
-      sidebar.classList.contains("active")
-    );
-  };
+      localStorage.setItem(
+        "isSidebarActive",
+        sidebar.classList.contains("active")
+      );
+    };
+  });
 
   function standardMessage() {
     const emptyMessage = document.querySelector(".empty-message");
