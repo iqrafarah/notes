@@ -190,7 +190,7 @@ window.addEventListener("load", (event) => {
   showNotes();
 
   const sidebar = document.querySelector(".sidebar");
-  const btns = document.querySelector("#btn");
+  const btns = document.querySelectorAll("#btn");
 
   const isSidebarActive = localStorage.getItem("isSidebarActive") === "true";
 
@@ -208,7 +208,6 @@ window.addEventListener("load", (event) => {
       );
     };
   });
-
   function standardMessage() {
     const emptyMessage = document.querySelector(".empty-message");
     if (deletedNotesContainer.children.length === 0) {
