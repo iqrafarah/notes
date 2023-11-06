@@ -28,7 +28,11 @@ header img {
   width: 120px;
 }
 
-
+.box img {
+  width: 240px;
+  height: 200px;
+  object-fit: cover;
+}
 .box:nth-child(3n + 1) {
   order: 1;
 }
@@ -550,7 +554,6 @@ button {
   top: 0;
   left: 70px;
   transition: all 0.5s ease;
-  height: 100vh;
 }
 .noResult {
   margin-top: 5vw;
