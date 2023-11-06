@@ -617,3 +617,6 @@ button {
 .deletedNotes i {
   cursor: not-allowed;
 }
+::-webkit-scrollbar {
+    display: none;
+}
