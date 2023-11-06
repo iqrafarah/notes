@@ -550,6 +550,7 @@ button {
   top: 0;
   left: 70px;
   transition: all 0.5s ease;
+  height: 100vh;
 }
 .noResult {
   margin-top: 5vw;
