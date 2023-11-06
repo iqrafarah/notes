@@ -505,7 +505,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     notesContainer.insertBefore(box, notesContainer.firstChild);
 
-    getSound();
     getMic();
 
     sound.addEventListener("click", () => {
